@@ -26,7 +26,7 @@ while True :
     k=keysdown()
        
     if ' ' in k :
-        rate(5)
+        rate(10)
         b.pos=vec(-45,0,-45)
         for c in cones :
             c.pos.x = random.uniform(-45,45)
@@ -53,5 +53,4 @@ while True :
             if mag(c.pos-b.pos)<3.5:
                b.pos.x = random.uniform(-45,50)
                b.pos.z = random.uniform(-45,50)
-        
-
+         
